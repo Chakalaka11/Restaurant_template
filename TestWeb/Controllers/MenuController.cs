@@ -59,7 +59,7 @@ namespace TestWeb.Controllers
                         using (System.IO.MemoryStream ms = new System.IO.MemoryStream(Ret))
                         {
                             temp = System.Drawing.Image.FromStream(ms);
-                            string path = HttpContext.Server.MapPath("~/Temp_img").ToString() + "\\" + OP_var[i].ID + ".jpeg";
+                            string path = HttpContext.Server.MapPath("~/Temp_img").ToString() + "\\" + OP_var[i].ID + ".jpg";
                             temp.Save(path, System.Drawing.Imaging.ImageFormat.Jpeg);
                         }
                     }
