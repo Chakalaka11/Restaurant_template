@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="traineesheep-app" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\Victor\\Documents\\Visual\ Studio\ 2015\\Projects\\TestWeb\\TestWeb\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^C:\\Users\\Victor\\Documents\\Visual\ Studio\ 2015\\Projects\\TestWeb\\TestWeb\\obj\\Release\\Package\\PackageTmp$" />
+  </parameter>
+  <parameter name="acsm_428eb2529de1454Entities-Web.config Connection String" description="" value="metadata=res://*/Models.MenuItems.csdl|res://*/Models.MenuItems.ssdl|res://*/Models.MenuItems.msl;provider=MySql.Data.MySqlClient;provider connection string=&quot;server=eu-cdbr-azure-west-d.cloudapp.net;user id=b5fd02d1b646f8;password=f431ada5;persistsecurityinfo=True;database=acsm_428eb2529de1454&quot;" tags="">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Victor\\Documents\\Visual\ Studio\ 2015\\Projects\\TestWeb\\TestWeb\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='acsm_428eb2529de1454Entities']/@connectionString" />
+  </parameter>
+</parameters>

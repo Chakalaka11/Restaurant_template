@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Хранилище acsm_428eb2529de1454Model" Provider="MySql.Data.MySqlClient" ProviderManifestToken="5.5" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="menu">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="50" />
+    <Property Name="Description" Type="varchar" MaxLength="255" />
+    <Property Name="Price" Type="decimal" Precision="19" Scale="2" />
+    <Property Name="Group" Type="varchar" MaxLength="255" />
+    <Property Name="Image" Type="longblob" />
+    <Property Name="CategoryName" Type="varchar" MaxLength="255" />
+    <Property Name="IsCatecory" Type="bool" />
+  </EntityType>
+  <EntityType Name="restaurantdata">
+    <Key>
+      <PropertyRef Name="Name" />
+    </Key>
+    <Property Name="Name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="STLocation" Type="varchar" MaxLength="255" />
+    <Property Name="Email&amp;telephone" Type="varchar" MaxLength="255" />
+    <Property Name="About" Type="mediumtext" />
+    <Property Name="MapLocation" Type="varchar" MaxLength="255" />
+    <Property Name="WorkTime" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityContainer Name="Хранилище acsm_428eb2529de1454ModelContainer">
+    <EntitySet Name="menu" EntityType="Self.menu" Schema="acsm_428eb2529de1454" store:Type="Tables" />
+    <EntitySet Name="restaurantdata" EntityType="Self.restaurantdata" Schema="acsm_428eb2529de1454" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

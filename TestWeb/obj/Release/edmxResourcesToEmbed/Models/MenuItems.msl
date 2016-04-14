@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище acsm_428eb2529de1454ModelContainer" CdmEntityContainer="acsm_428eb2529de1454Entities">
+    <EntitySetMapping Name="menu">
+      <EntityTypeMapping TypeName="acsm_428eb2529de1454Model.menu">
+        <MappingFragment StoreEntitySet="menu">
+          <ScalarProperty Name="IsCatecory" ColumnName="IsCatecory" />
+          <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Group" ColumnName="Group" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="restaurantdata">
+      <EntityTypeMapping TypeName="acsm_428eb2529de1454Model.restaurantdata">
+        <MappingFragment StoreEntitySet="restaurantdata">
+          <ScalarProperty Name="Email_telephone" ColumnName="Email&amp;telephone" />
+          <ScalarProperty Name="WorkTime" ColumnName="WorkTime" />
+          <ScalarProperty Name="MapLocation" ColumnName="MapLocation" />
+          <ScalarProperty Name="About" ColumnName="About" />
+          <ScalarProperty Name="STLocation" ColumnName="STLocation" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

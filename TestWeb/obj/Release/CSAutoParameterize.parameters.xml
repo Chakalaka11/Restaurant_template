@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="acsm_428eb2529de1454Entities-Web.config Connection String" description="acsm_428eb2529de1454Entities Строка подключения в web.config, используемая приложением для доступа к базе данных." defaultValue="metadata=res://*/Models.MenuItems.csdl|res://*/Models.MenuItems.ssdl|res://*/Models.MenuItems.msl;provider=MySql.Data.MySqlClient;provider connection string=&quot;server=eu-cdbr-azure-west-d.cloudapp.net;user id=b5fd02d1b646f8;password=f431ada5;persistsecurityinfo=True;database=acsm_428eb2529de1454&quot;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Victor\\Documents\\Visual\ Studio\ 2015\\Projects\\TestWeb\\TestWeb\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='acsm_428eb2529de1454Entities']/@connectionString" />
+  </parameter>
+</parameters>

@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="Хранилище acsm_428eb2529de1454Model" Provider="MySql.Data.MySqlClient" ProviderManifestToken="5.5" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="menu">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="varchar" MaxLength="50" />
+          <Property Name="Description" Type="varchar" MaxLength="255" />
+          <Property Name="Price" Type="decimal" Precision="19" Scale="2" />
+          <Property Name="Group" Type="varchar" MaxLength="255" />
+          <Property Name="Image" Type="longblob" />
+          <Property Name="CategoryName" Type="varchar" MaxLength="255" />
+          <Property Name="IsCatecory" Type="bool" />
+        </EntityType>
+        <EntityType Name="restaurantdata">
+          <Key>
+            <PropertyRef Name="Name" />
+          </Key>
+          <Property Name="Name" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="STLocation" Type="varchar" MaxLength="255" />
+          <Property Name="Email&amp;telephone" Type="varchar" MaxLength="255" />
+          <Property Name="About" Type="mediumtext" />
+          <Property Name="MapLocation" Type="varchar" MaxLength="255" />
+          <Property Name="WorkTime" Type="varchar" MaxLength="255" />
+        </EntityType>
+        <EntityContainer Name="Хранилище acsm_428eb2529de1454ModelContainer">
+          <EntitySet Name="menu" EntityType="Self.menu" Schema="acsm_428eb2529de1454" store:Type="Tables" />
+          <EntitySet Name="restaurantdata" EntityType="Self.restaurantdata" Schema="acsm_428eb2529de1454" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="acsm_428eb2529de1454Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="menu">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Description" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="Price" Type="Decimal" />
+          <Property Name="Group" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="Image" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="CategoryName" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="IsCatecory" Type="Boolean" />
+        </EntityType>
+        <EntityContainer Name="acsm_428eb2529de1454Entities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="menu" EntityType="Self.menu" />
+          <EntitySet Name="restaurantdata" EntityType="acsm_428eb2529de1454Model.restaurantdata" />
+        </EntityContainer>
+        <EntityType Name="restaurantdata">
+          <Key>
+            <PropertyRef Name="Name" />
+          </Key>
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="STLocation" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="About" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" />
+          <Property Name="MapLocation" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="WorkTime" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="Email_telephone" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="Хранилище acsm_428eb2529de1454ModelContainer" CdmEntityContainer="acsm_428eb2529de1454Entities">
+          <EntitySetMapping Name="menu">
+            <EntityTypeMapping TypeName="acsm_428eb2529de1454Model.menu">
+              <MappingFragment StoreEntitySet="menu">
+                <ScalarProperty Name="IsCatecory" ColumnName="IsCatecory" />
+                <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Price" ColumnName="Price" />
+                <ScalarProperty Name="Group" ColumnName="Group" />
+                <ScalarProperty Name="Image" ColumnName="Image" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="restaurantdata">
+            <EntityTypeMapping TypeName="acsm_428eb2529de1454Model.restaurantdata">
+              <MappingFragment StoreEntitySet="restaurantdata">
+                <ScalarProperty Name="Email_telephone" ColumnName="Email&amp;telephone" />
+                <ScalarProperty Name="WorkTime" ColumnName="WorkTime" />
+                <ScalarProperty Name="MapLocation" ColumnName="MapLocation" />
+                <ScalarProperty Name="About" ColumnName="About" />
+                <ScalarProperty Name="STLocation" ColumnName="STLocation" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="true" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Нет" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

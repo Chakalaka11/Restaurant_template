@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Restaurant</title>
+    <script src="~/Scripts/jquery.js"></script>
+    <script src="~/Scripts/bootstrap.js"></script>
+    <script type="text/javascript" src="~/Scripts/parallax.min.js"></script>
+   
+    <link href="~/Content/CSS/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/CSS/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <header>
+      
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 ">
+                    <div class="site-logo" id="site-logo" style="margin-left: 0px;">
+                        <a href="@Url.Action("Index", "Home")" hidefocus="true" style="outline: none;">
+                            <i><span>The</span></i><span>@Session["Name"]</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-2 menu-item">
+                    <div>
+                        <a href="@Url.Action("index","Menu")">
+                            Menu
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-2 menu-item">
+                    <div>
+                        <a href="@Url.Action("About","Home")">
+                            About
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-2 menu-item">
+                    <div>
+                        <a href="@Url.Action("index","Menu")">
+                            Gallery
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-2 menu-item">
+                    <div>
+                        <a  href="@Url.Action("Contacts","Home")">
+                            Contacts
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <div class="col-md-3 menu-item-small">
+                            <div>
+                                <a href="@Url.Action("index","Menu")">
+                                    Menu
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 menu-item-small">
+                            <div>
+                                <a href="@Url.Action("About","Home")">
+                                    About
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 menu-item-small">
+                            <div>
+                                <a href="@Url.Action("index","Menu")">
+                                    Gallery
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3  menu-item-small">
+                            <div>
+                                <a href="@Url.Action("Contacts","Home")">
+                                    Contacts
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>

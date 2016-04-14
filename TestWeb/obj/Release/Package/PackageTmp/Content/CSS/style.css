@@ -1,0 +1,235 @@
+
+.site-logo {
+  margin-top: 19px !important;
+  position: relative;
+  text-align: center;
+  margin-bottom: 24px;
+  letter-spacing: 1px;
+}
+ .site-logo a {
+  display: inline-block;
+  border: 2px solid #454040;
+  padding: 17px 40px 12px;
+  margin-top: 12px;
+  position: relative;
+}
+
+ .site-logo i {
+  position: absolute;
+  top: -13px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+ .site-logo i span {
+  background: #fff;
+  display: inline-block;
+  font-size: 24px;
+  font-family: "Great Vibes";
+  padding: 0 5px 0 5px;
+  color: #2a2a2a;
+}
+.site-logo a:hover {
+  text-decoration: none;
+}
+ .site-logo span {
+  display: block;
+  font-size: 24px;
+  color: #292929;
+  font-family: Intro;
+}
+ @font-face 
+{
+    font-family: Intro; 
+    src: url(../../fonts/Intro.otf) ;
+}
+  @font-face 
+{
+    font-family: HattoItalic; 
+    src: url(../../fonts/Hattori_Hanzo_Italic.otf) ;
+}
+  
+@font-face {
+    font-family:"Alex_brush";
+    src:url(../../fonts/AlexBrush-Regular.ttf);
+}
+  
+@font-face {
+    font-family:"quicksand_r";
+    src:url(../../fonts/Quicksand-Regular.otf);
+}
+@font-face {
+    font-family:"quicksand_l";
+    src:url(../../fonts/Quicksand-Light.otf);
+}
+@font-face {
+    font-family:"quicksand_b";
+    src:url(../../fonts/Quicksand-Bold.otf);
+}
+
+.title-beaty {
+     font-family:Alex_brush;
+    font-size:4vh;
+}
+  .text-bold-beaty {
+     font-family:quicksand_b;
+}
+.text-beaty {
+    font-family:quicksand_r;
+     font-size:2vh;
+}
+
+.menu-item {
+    font-family: Intro;
+    text-align: center;
+    font-size:3vh;
+    height: 12vh;
+    display:table;
+    -webkit-transition: all .1s ease;
+    -moz-transition: all .1s ease;
+    transition: all .1s ease;
+    border:solid red 0px;
+   
+}
+.menu-item div {
+        vertical-align: middle;
+        display: table-cell;
+        width: 90%;
+        top: 45%;
+}
+.menu-item:hover {
+    border-bottom-width:4px;
+     border-top-width:4px;
+}
+.menu-item div a{
+        text-decoration: none !important;
+        color: black;
+}
+
+
+
+.menu-item-small {
+    font-family: Intro;
+    text-align: center;
+    font-size:1.5vh;
+    height: 5vh;
+    display:table;
+    -webkit-transition: all .1s ease;
+    -moz-transition: all .1s ease;
+    transition: all .1s ease;
+    border:solid red 0px;
+   
+}
+.menu-item-small div {
+        vertical-align: middle;
+        display: table-cell;
+        width: 90%;
+}
+.menu-item-small:hover {
+    border-bottom-width:2px;
+     border-top-width:2px;
+}
+.menu-item-small div a{
+        text-decoration: none !important;
+        color: black;
+}
+
+
+.ribbon {
+  display: inline-block;
+  margin-top: 20px;
+  position: relative;
+   text-align: center;
+}
+.ribbon path {
+  fill: #ffa42e;
+}
+.ribbon svg {
+  width: 100%;
+  height: 60px;
+}
+.ribbon span {
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
+  line-height: 68px;
+  font-size: 15px;
+  color: #fff;
+  text-transform: uppercase;
+  
+}.ribbon {
+  margin-top: 27px;
+  margin-bottom: 27px;
+}
+.ribbon a {
+  text-decoration: none;
+}
+
+
+
+
+.dishes {
+  overflow: hidden;
+  margin-bottom: 100px;
+}
+.dishes .title {
+  text-align: center;
+}
+
+
+
+.menu_part {
+    height:200px;
+      -webkit-transition: all .1s ease;
+    -moz-transition: all .1s ease;
+    transition: all .1s ease;
+    border:solid red 0px;
+    overflow: hidden;
+}
+    .menu_part:hover {
+     border-width:4px;
+    }
+
+
+    
+.get-more {
+    position: absolute;
+    height:100%;
+    width:80%;
+    z-index:1;
+     background:#000000;
+     opacity:0;
+      text-decoration: none !important;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius:50%;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    transform: rotate(90deg);
+}
+
+.get-more-sq {
+    position: absolute;
+    height:100%;
+    width:90%;
+    color:white;
+    z-index:1;
+     background:rgba(0, 0,0,0);
+      text-decoration: none !important;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+ .get-more-sq div{
+     opacity:0;
+    }
+    .get-more-sq:hover {
+     background:rgba(0, 0,0,0.4);
+    height:96%;
+    width:90%;
+    }
+     .get-more-sq:hover div{
+    opacity:1;
+    }

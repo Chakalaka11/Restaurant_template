@@ -1,0 +1,261 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>@Session["Name"]</title>
+    <meta name="viewport" content="width=device-width" />
+    <script type="text/javascript" src="~/Scripts/jquery.js"></script>
+    <link rel="stylesheet" type="text/css" href="~/Content/CSS/bootstrap.css" />
+    <script type="text/javascript" src="~/Scripts/bootstrap.js"></script>
+    <script type="text/javascript" src="~/Scripts/parallax.min.js"></script>
+    <script type="text/javascript" src="~/Scripts/Main.js"></script>
+    <link rel="stylesheet" type="text/css" href="~/Content/CSS/Main.css" />
+    <link rel="stylesheet" type="text/css" href="~/Content/CSS/style.css" />
+    <title>Index</title>
+</head>
+<body>
+
+    <div id="MainCarousel" class="carousel slide" data-interval="10000" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#MainCarousel" data-slide-to="0" class=""></li>
+            <li data-target="#MainCarousel" data-slide-to="1" class=""></li>
+            <li data-target="#MainCarousel" data-slide-to="2" class="active"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="item">
+                <img class="first-slide" src="~/Temp_img/demo.jpeg" alt="First slide">
+                <div class="container">
+                    <div class="carousel-caption" style="background:rgba(0, 0, 0,0.3)">
+                        <h1 class="title-beaty">The @Session["Name"]</h1>
+                        <p>Small restaurant for small site.</p>
+                        
+                    </div>
+                </div>
+                <div style="position:absolute;width:100%;height:100%;background:#fff;z-index:1">
+
+                </div>
+            </div>
+            <div class="item">
+                <img class="second-slide" src="~/Temp_img/1_slide.jpg" alt="Second slide">
+                <div class="container">
+                    <div class="carousel-caption" style="background:rgba(0, 0, 0,0.3)">
+                        <h1 class="title-beaty">The @Session["Name"]</h1>
+                        <p>A lot of different stuff.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="item active">
+                <img class="third-slide" src="~/Temp_img/2_slide.jpg" alt="Third slide">
+                <div class="container">
+                    <div class="carousel-caption" style="background:rgba(0, 0, 0,0.3)">
+                        <h1 class="title-beaty">The @Session["Name"]</h1>
+                        <p>That`s clear enought!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="left carousel-control" href="#MainCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#MainCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div> <!-- Carousel -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 ">
+                <div class="site-logo" id="site-logo" style="margin-left: 0px;">
+                    <a  href="@Url.Action("Index", "Home")" hidefocus="true" style="outline: none;">
+                        <i><span>The</span></i><span>@Session["Name"]</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2  menu-item">
+                <div>
+                    <a  href="@Url.Action("index","Menu")">
+                        Menu
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2  menu-item">
+                <div>
+                    <a  href="@Url.Action("About","Home")">
+                        About
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2 menu-item">
+                <div>
+                    <a  href="@Url.Action("index","Menu")">
+                        Gallery
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2 menu-item">
+                <div>
+                    <a href="@Url.Action("Contacts","Home")">
+                        Contacts
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container marketing">
+        <div class="row">
+            <div class="col-lg-4 col-md-4">
+                <h1 class="title-beaty">Heading</h1>
+                <div style="position:relative;">
+                    <a href="@Url.Action("Desert","Menu")" class="get-more">
+                        <div class="dividers">
+                            <div class="divider up"></div>
+                            <div class="divider-text">Find Out More</div>
+                            <div class="divider down"></div>
+                        </div>
+                    </a>
+                    <img class="img-circle" src="~/Temp_img/Desert.jpg" alt="Generic placeholder image">
+                </div>
+
+                <p class="text-beaty">Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+
+            </div>
+            <div class="col-lg-4 col-md-4">
+                <h1 class="title-beaty">Heading</h1>
+                <div style="position:relative;">
+                    <a href="@Url.Action("Drink","Menu")" class="get-more">
+                        <div class="dividers">
+                            <div class="divider up"></div>
+                            <div class="divider-text">Find Out More</div>
+                            <div class="divider down"></div>
+                        </div>
+                    </a>
+                    <img class="img-circle" src="~/Temp_img/Drink.jpg" alt="Generic placeholder image">
+                </div>
+
+                <p class="text-beaty">Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+
+            </div>
+            <div class="col-lg-4 col-md-4">
+                <h1 class="title-beaty">Heading</h1>
+                <div style="position:relative;">
+                    <a href="@Url.Action("Food","Menu")" class="get-more">
+                        <div class="dividers">
+                            <div class="divider up"></div>
+                            <div class="divider-text">Find Out More</div>
+                            <div class="divider down"></div>
+                        </div>
+                    </a>
+                    <img class="img-circle" src="~/Temp_img/Dish.jpg" alt="Generic placeholder image">
+                </div>
+
+                <p class="text-beaty">Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+
+            </div>
+        </div>
+        <!-- START THE FEATURETTES -->
+    </div>
+
+
+    <div class="parallax-window" data-parallax="scroll" style="display:table">
+        <div style="vertical-align:middle;display:table-cell">
+            <div class="col-md-8 col-md-offset-2" style="color:#ffffff;text-align:center">
+                <h1 class="title-beaty">Who we are? </h1>
+                <div class="text-beaty" style="font-family:quicksand_l">
+                    Who’s the ideal person to show you round a new city? Someone local who shares your interests, right? Right. That’s TriplAgent: the insider’s view of a city, from people like you.
+
+                    When you’re travelling, time is precious. You want to get the most out of it. Instead of some trendy, overpriced diner on a crowded tourist street, you want to find that hidden gem of a neighbourhood restaurant. You want to explore; you want the adventure. And now, you have a guide.
+
+                    If you’d like to help us build the best ever guide to the ertvod world’s greattourist street, you want to find that hidden gem of a neighbour!
+                </div>
+            </div>
+        </div>
+    </div>
+    <br />
+    <div class="container">
+        <div class="row" style="text-align:center">
+            <div class="col-sm-4 col-md-4 ">
+
+                <h3 class="title-beaty">Want to contact us?</h3>
+                <h2 class="text-bold-beaty">Send us your feedback</h2>
+                <div class="text-beaty">
+                    <p>Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor nequeu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim hasellus mirolestie magna non lorem retibitur asterm dolor site amet.</p>
+                </div>
+
+            </div>
+            <div class="col-sm-4 col-md-4 ">
+
+                <h3 class="title-beaty">From the blog</h3>
+                <h2 class="text-bold-beaty">Cooking Class Tuesdays</h2>
+                <div class="text-beaty">
+                    <p>Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor nequeu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim hasell moytrirolestie magna non lorem ipsum dolor site amet retituros.</p>
+                </div>
+
+            </div>
+            <div class="col-sm-4 col-md-4 ">
+                <h3 class="title-beaty">From the blog</h3>
+                <h2 class="text-bold-beaty">Cooking Class Tuesdays</h2>
+                <div class="text-beaty">
+                    <p>Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor nequeu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim hasell moytrirolestie magna non lorem ipsum dolor site amet retituros.</p>
+                </div>
+
+            </div>
+        </div>
+        <br />
+     
+       
+
+    </div>
+    <footer style="margin-bottom:20px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="col-md-3 menu-item-small">
+                        <div>
+                            <a href="@Url.Action("index","Menu")">
+                                Menu
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 menu-item-small">
+                        <div>
+                            <a href="@Url.Action("About","Home")">
+                                About
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 menu-item-small">
+                        <div>
+                            <a href="@Url.Action("index","Menu")">
+                                Gallery
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3  menu-item-small">
+                        <div>
+                            <a href="@Url.Action("Contacts","Home")">
+                                Contacts
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <br />
+                <div class="col-md-8 col-md-offset-2 text-beaty" style="text-align:center">
+                    Test app. Made by fun & glory!
+                </div>
+        </div>
+    </footer>
+
+
+</body>
+</html>
